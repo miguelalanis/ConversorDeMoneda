@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -8,7 +9,9 @@ import java.net.http.HttpResponse;
 public class ConsultaTipoDeCambio {
 
     public Moneda consultaTipoDeCambio(String baseCode) {
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/849e1020645e3b2328ef3790/latest/" + baseCode);
+        Dotenv dotenv = Dotenv.load();
+        String API_KEY = dotenv.get("API_KEY");
+        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/" + baseCode);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(direccion)

@@ -10,7 +10,16 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Descargas/gson-2.11.0.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/gson-2.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/dotenv-java-3.0.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
