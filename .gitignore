@@ -4,6 +4,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .env
+src/com/miguelalanis/conversordemoneda/UltimasConversiones.txt
 
 ### Eclipse ###
 .apt_generated

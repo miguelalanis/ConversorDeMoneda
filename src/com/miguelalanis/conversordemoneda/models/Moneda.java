@@ -1,3 +1,5 @@
+package com.miguelalanis.conversordemoneda.models;
+
 import java.util.Map;
 
 public record Moneda(
